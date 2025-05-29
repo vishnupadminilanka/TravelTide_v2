@@ -1,28 +1,21 @@
-# TravelTide_v2
-Customer Segmentation for TravelTide app
+# 🚀 Executive Summary: Travelproject – Personalization and Engagement Strategy (Post Jan 2023)
+Travelproject aims to increase user engagement and conversion rates through personalized perks tailored to user demographics, behavior, and spending patterns. By analyzing post-January 4th, 2023 user activity, a decision-tree-based segmentation framework was designed to strategically assign perks that resonate with user needs and travel habits.
 
-🚀 **Executive Summary:** Travelproject – Personalization and Engagement Strategy Post 04 Jan 2023 up until July 2023
-📌 **Objective**
-To enhance user engagement and increase conversion by offering personalized perks to travelers based on demographic, behavioral, and transactional patterns derived from post-January 4th, 2023 user activity.
+# 🎯 Objective
+To enhance engagement and boost booking conversions by targeting active and inactive users with contextual perks based on behavioral and transactional insights.
 
-🔍 **User Segmentation Strategy**
-The segmentation logic was designed using a **decision-tree-based** approach with key metrics:
+# 🔍 Segmentation Strategy
+Users with more than 7 sessions were considered for analysis. Key segmentation dimensions included:
 
-Trips completed
-
-User age
-
-Spending habits
-
-Session activity
-
-Family status (children)
-
+Trip Frequency
+Age Group
+Spending Behavior
+Family Status (Children)
 Cancellations
 
-Users were filtered to only include those with more than **7 sessions up**, ensuring an engaged cohort for perk optimization.
+A rule-based decision tree was used to define personalized segments and perks.
 
-🧩 Segments and Corresponding Perks
+# 🧩 Segment-Based Perks
 **1. Inactive Users**
 Criteria: num_trips = 0
 
@@ -37,85 +30,43 @@ Divided by age:
 
 A. **Younger Travelers** (Age < 30)
 With children:
-
 High spenders: 🟠 **Family High Spenders**: Free stay for child
-
 Others: 🟠 **Family Travelers**: Free child ticket
 
 Without children:
-
 3 Trips: 🟠 **Adventurers**: 10% off each additional seat
-
 ≤3 Trips: 🟠 **Occasional Travelers**:Complimentary drinks
 
 B. Senior Travelers (Age > 60)
 High spenders: 🟠 **Elder Explorers**: Free Meals
-
 Others: 🟠 **Travel-averse seniors**: Support on Senior Services
 
 C. Middle-Aged Travelers (30 ≤ Age ≤ 60)
 3 Trips:
-
 High spenders: 🟠 **Premium Travelers**: 20% off + Free Checked Bag
-
 Others: 🟠 **Standard Travelers**: 15% Discount
-
 ≤3 Trips: 🟠 **Unseasoned Travelers**: 50% off Premium Subscription
 
-📊 Key Metrics Extracted from SQL Logic
-Demographics
-Age and age group
+# 📊 Key Metrics Computed
+Demographics: Age, children, home city/country
+Behavioral: Sessions, page clicks, cancellations
+Transactional: Spend on hotels/flights, number of trips, avg. trip spend, travel distance (haversine metric)
 
-Presence of children
+# 🧮 SQL Logic Summary
+A robust SQL pipeline was built to:
+Filter relevant sessions (post-Jan 4, 2023, >7 sessions)
+Compute user-level behavioral, booking, and financial metrics
+Assign personalized perks via conditional logic
 
-Home location (country, city)
+Produce a final user-perk dataset for downstream use
 
-Behavioral Metrics
-Number of sessions
+# 📈 Strategic Value
+High-value segments (e.g., Premium Travelers, Family High Spenders) were identified for loyalty and upselling initiatives.
+Price-sensitive or new users receive targeted incentives to drive conversions.
+Lifestyle-based perks for families and seniors improve personalization and relevance.
 
-Page clicks per session
-
-Cancellations
-
-Transactional Metrics
-Number of trips
-
-Average spend per trip
-
-Flight/hotel bookings (standalone or combined)
-
-Spending on flights/hotels
-
-Travel distance (haversine metric)
-
-📁 Data Pipeline Highlights (from SQL)
-Filtering Sessions: Post-Jan 4, 2023 only; minimum 7 sessions per user.
-
-User Metrics: Derived trip-level, session-level, and monetary metrics for each user.
-
-Perk Assignment: Final CASE logic uses trip count, spending patterns, age group, and family status to assign perk tiers.
-
-📈 Impact Potential
-Based on the perk assignment logic:
-
-High-frequency & high-spend segments (e.g., "Premium Travelers", "Family High Spenders") can drive repeat usage and upsells.
-
-Infrequent and price-sensitive users (e.g., “New Buddies”, “Unseasoned Travelers”) receive discounts to encourage first conversions.
-
-Targeted family and senior perks add personalized value based on lifestyle and likely travel behavior.
-
-📌 # Final Output Table (From SQL)
-A curated user-level table was produced with:
-
-Demographics, behavioral and transaction metrics
-
-Final assigned perk label
-
-✅ Next Steps
+# Recommendations:
 Deploy perks in-app and via email immediately for better impact.
-
 Monitor perk redemption rate and adjust thresholds quarterly.
-
-Consider dynamic thresholds (like top 25% spenders instead of fixed spend amount).
-
-Add tracking for perk impact on next 30-day engagement or spend.
+Track performance via CTR and conversions.
+Run A/B tests to validate impact.
