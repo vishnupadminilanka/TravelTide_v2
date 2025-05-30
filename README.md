@@ -1,4 +1,4 @@
-# 🚀 Executive Summary: Travelproject – Personalization and Engagement Strategy (Post Jan 2023)
+# 🚀 Executive Summary: Travelproject – Customer Segmentation & Rewards Program
 Travelproject aims to increase user engagement and conversion rates through personalized perks tailored to user demographics, behavior, and spending patterns. By analyzing post-January 4th, 2023 user activity, a decision-tree-based segmentation framework was designed to strategically assign perks that resonate with user needs and travel habits.
 
 # 🎯 Objective
