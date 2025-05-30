@@ -77,3 +77,6 @@ Lifestyle-based perks for families and seniors improve personalization and relev
 [Presentation pdf](https://github.com/vishnupadminilanka/TravelTide_v2/blob/main/documents/Traveltide%20Customer%20Segmentaion%20%26%20Req_compressed.pdf)
 
 [Decision Tree Framework](https://github.com/vishnupadminilanka/TravelTide_v2/blob/main/documents/Traveltide_Decision%20Tree%20with%20perks.drawio.png)
+
+[Presentation](https://www.canva.com/design/DAGo3SRIcCw/EorHKac4nIgWVLNT8Kg9Tg/view?utm_content=DAGo3SRIcCw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25ad5bba90)
+
