@@ -54,16 +54,16 @@ Transactional: Spend on hotels/flights, number of trips, avg. trip spend, travel
 
 # 🧮 SQL Logic Summary
 A robust SQL pipeline was built to:
-Filter relevant sessions (post-Jan 4, 2023, >7 sessions)
-Compute user-level behavioral, booking, and financial metrics
-Assign personalized perks via conditional logic
+1. Filter relevant sessions (post-Jan 4, 2023, >7 sessions)
+2. Compute user-level behavioral, booking, and financial metrics
+3. Assign personalized perks via conditional logic
 
 Produce a final user-perk dataset for downstream use
 
 # 📈 Strategic Value
-High-value segments (e.g., Premium Travelers, Family High Spenders) were identified for loyalty and upselling initiatives.
-Price-sensitive or new users receive targeted incentives to drive conversions.
-Lifestyle-based perks for families and seniors improve personalization and relevance.
+1. High-value segments (e.g., Premium Travelers, Family High Spenders) were identified for loyalty and upselling initiatives.
+2. Price-sensitive or new users receive targeted incentives to drive conversions.
+3. Lifestyle-based perks for families and seniors improve personalization and relevance.
 
 # Recommendations:
 1. Deploy perks in-app and via email immediately for better impact.
