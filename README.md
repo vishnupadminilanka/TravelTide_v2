@@ -66,7 +66,10 @@ Price-sensitive or new users receive targeted incentives to drive conversions.
 Lifestyle-based perks for families and seniors improve personalization and relevance.
 
 # Recommendations:
-Deploy perks in-app and via email immediately for better impact.
-Monitor perk redemption rate and adjust thresholds quarterly.
-Track performance via CTR and conversions.
-Run A/B tests to validate impact.
+1. Deploy perks in-app and via email immediately for better impact.
+2. Monitor perk redemption rate and adjust thresholds quarterly.
+3. Track performance via CTR and conversions.
+4. Run A/B tests to validate impact.
+
+# References:
+[Tableau Reports](https://public.tableau.com/app/profile/vishnu.padmini.lanka/viz/Traveltide_17486436137030/FamilyHighSpenders)
